@@ -297,3 +297,32 @@
 #define IC_COMP_VERSION     (0xF8 + I2C_BASE_ADDR)
 //Component Type. RSVD (Reserved)
 #define IC_COMP_TYPE        (0xFC + I2C_BASE_ADDR)
+
+/******************************** UART Registers **********************************/
+
+//UART Base Address
+#define UART_BASE_ADDR      0xB0002000
+//Receive Buffer / Transmit Holding / Divisor Latch Low
+#define RBR_THR_DLL         (0x0 + UART_BASE_ADDR)
+//Interrupt Enable / Divisor Latch High
+#define IER_DLH             (0x4 + UART_BASE_ADDR)
+//Interrupt Identification / FIFO Control
+#define IIR_FCR             (0x8 + UART_BASE_ADDR)
+//Line Control
+#define LCR                 (0xC + UART_BASE_ADDR)
+//MODEM Control
+#define MCR                 (0x10 + UART_BASE_ADDR)
+//Line Status
+#define LSR                 (0x14 + UART_BASE_ADDR)
+//Modem Status
+#define MSR                 (0x18 + UART_BASE_ADDR)
+//Scratchpad
+#define SCR                 (0x1C + UART_BASE_ADDR)
+//UART Status
+#define USR                 (0x7C + UART_BASE_ADDR)
+//Halt Transmission
+#define TX                  (0xA4 + UART_BASE_ADDR)
+//DMA Software Acknowledge
+#define DMASA               (0xA8 + UART_BASE_ADDR)
+//Divisor Latch Fraction.
+#define DLF                 (0xC0 + UART_BASE_ADDR)
