@@ -212,88 +212,88 @@
 //I2C Base address
 #define I2C_BASE_ADDR       0xB0002800
 //Control Register
-#define IC_CON              0x0
+#define IC_CON              (0x0 + I2C_BASE_ADDR)
 //Master Target Address
-#define IC_TAR              0x4
+#define IC_TAR              (0x4 + I2C_BASE_ADDR)
 //Slave Address
-#define IC_SAR              0x8
+#define IC_SAR              (0x8 + I2C_BASE_ADDR)
 //High Speed Master ID
-#define IC_HS_MADDR         0xC
+#define IC_HS_MADDR         (0xC + I2C_BASE_ADDR)
 //Data Buffer and Command
-#define IC_DATA_CMD         0x10
+#define IC_DATA_CMD         (0x10 + I2C_BASE_ADDR)
 //Standard Speed Clock SCL High Count
-#define IC_SS_SCL_HCNT      0x14
+#define IC_SS_SCL_HCNT      (0x14 + I2C_BASE_ADDR)
 //Standard Speed Clock SCL Low Count
-#define IC_SS_SCL_LCNT      0x18
+#define IC_SS_SCL_LCNT      (0x18 + I2C_BASE_ADDR)
 //Fast Speed Clock SCL High Count
-#define IC_FS_SCL_HCNT      0x1C
+#define IC_FS_SCL_HCNT      (0x1C + I2C_BASE_ADDR)
 //Fast Speed I2C Clock SCL Low Count
-#define IC_FS_SCL_LCNT      0x20
+#define IC_FS_SCL_LCNT      (0x20 + I2C_BASE_ADDR)
 //High Speed I2C Clock SCL High Count
-#define IC_HS_SCL_HCNT      0x24
+#define IC_HS_SCL_HCNT      (0x24 + I2C_BASE_ADDR)
 //High Speed I2C Clock SCL Low Count
-#define IC_HS_SCL_LCNT      0x28
+#define IC_HS_SCL_LCNT      (0x28 + I2C_BASE_ADDR)
 //Interrupt Status
-#define IC_INTR_STAT        0x2C
+#define IC_INTR_STAT        (0x2C + I2C_BASE_ADDR)
 //Interrupt Mask
-#define IC_INTR_MASK        0x30
+#define IC_INTR_MASK        (0x30 + I2C_BASE_ADDR)
 //Raw Interrupt Status
-#define IC_RAW_INTR_STAT    0x34
+#define IC_RAW_INTR_STAT    (0x34 + I2C_BASE_ADDR)
 //Receive FIFO Threshold Level
-#define IC_RX_TL            0x38
+#define IC_RX_TL            (0x38 + I2C_BASE_ADDR)
 //Transmit FIFO Threshold Level
-#define IC_TX_TL
+#define IC_TX_TL            (0x3C + I2C_BASE_ADDR)
 //Clear Combined and Individual Interrupt
-#define IC_CLR_INTR
+#define IC_CLR_INTR         (0x40 + I2C_BASE_ADDR)
 //Clear RX_UNDER Interrupt
-#define IC_CLR_RX_UNDER
+#define IC_CLR_RX_UNDER     (0x44 + I2C_BASE_ADDR)
 //Clear RX_OVER Interrupt
-#define IC_CLR_RX_OVER
+#define IC_CLR_RX_OVER      (0x48 + I2C_BASE_ADDR)
 //Clear TX_OVER Interrupt
-#define IC_CLR_TX_OVER
+#define IC_CLR_TX_OVER      (0x4C + I2C_BASE_ADDR)
 //Clear RD_REQ Interrupt
-#define IC_CLR_RD_REQ
+#define IC_CLR_RD_REQ       (0x50 + I2C_BASE_ADDR)
 //Clear TX_ABRT Interrupt
-#define IC_CLR_TX_ABRT
+#define IC_CLR_TX_ABRT      (0x54 + I2C_BASE_ADDR)
 //Clear RX_DONE Interrupt
-#define IC_CLR_RX_DONE
+#define IC_CLR_RX_DONE      (0x58 + I2C_BASE_ADDR)
 //Clear ACTIVITY Interrupt
-#define IC_CLR_ACTIVITY
+#define IC_CLR_ACTIVITY     (0x5C + I2C_BASE_ADDR)
 //Clear STOP_DET Interrupt
-#define IC_CLR_STOP_DET
+#define IC_CLR_STOP_DET     (0x60 + I2C_BASE_ADDR)
 //Clear START_DET Interrupt
-#define IC_CLR_START_DET
-//Clear GEN_CALL Interrupt
-#define IC_CLR_GEN_CALL
-//Enable
-#define IC_ENABLE
+#define IC_CLR_START_DET    (0x64 + I2C_BASE_ADDR)
+//Clear GEN_CALL Interrupt 
+#define IC_CLR_GEN_CALL     (0x68 + I2C_BASE_ADDR)
+//Enable    
+#define IC_ENABLE           (0x6C + I2C_BASE_ADDR)
 //Status
-#define IC_STATUS
+#define IC_STATUS           (0x70 + I2C_BASE_ADDR)
 //Transmit FIFO Level
-#define IC_TXFLR
+#define IC_TXFLR            (0x74 + I2C_BASE_ADDR)
 //Receive FIFO Level
-#define IC_RXFLR
+#define IC_RXFLR            (0x78 + I2C_BASE_ADDR)
 //SDA Hold
-#define IC_SDA_HOLD
+#define IC_SDA_HOLD         (0x70 + I2C_BASE_ADDR)
 //Transmit Abort Source
-#define IC_TX_ABRT_SOURCE
+#define IC_TX_ABRT_SOURCE   (0x74 + I2C_BASE_ADDR)
 //SDA Setup
-#define IC_DMA_CR
+#define IC_DMA_CR           (0x88 + I2C_BASE_ADDR)
 //DMA Transmit Data Level Register
-#define IC_DMA_TDLR
+#define IC_DMA_TDLR         (0x8C + I2C_BASE_ADDR)
 //I2C Receive Data Level Register
-#define IC_DMA_RDLR
+#define IC_DMA_RDLR         (0x90 + I2C_BASE_ADDR)
 //SDA Setup
-#define IC_SDA_SETUP
+#define IC_SDA_SETUP        (0x94 + I2C_BASE_ADDR)
 //General Call Ack
-#define IC_ACK_GENERAL_CALL
+#define IC_ACK_GENERAL_CALL (0x98 + I2C_BASE_ADDR)
 //Enable Status
-#define IC_ENABLE_STATUS
+#define IC_ENABLE_STATUS    (0x9C + I2C_BASE_ADDR)
 //SS and FS Spike Suppression Limit
-#define IC_FS_SPKLEN
+#define IC_FS_SPKLEN        (0xA0 + I2C_BASE_ADDR)
 //Configuration Parameters. RSVD (Reserved)
-#define IC_COMP_PARAM_1
+#define IC_COMP_PARAM_1     (0xF4 + I2C_BASE_ADDR)
 //Component Version. RSVD (Reserved)
-#define IC_COMP_VERSION
+#define IC_COMP_VERSION     (0xF8 + I2C_BASE_ADDR)
 //Component Type. RSVD (Reserved)
-#define IC_COMP_TYPE
+#define IC_COMP_TYPE        (0xFC + I2C_BASE_ADDR)
