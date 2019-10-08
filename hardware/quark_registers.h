@@ -326,3 +326,94 @@
 #define DMASA               (0xA8 + UART_BASE_ADDR)
 //Divisor Latch Fraction.
 #define DLF                 (0xC0 + UART_BASE_ADDR)
+
+/******************************** SPI Registers **********************************/
+
+#define SPI_BASE_ADDR       0xB0001000
+//Control Register 0
+#define CTRLR0              (0x0 + SPI_BASE_ADDR)
+//Control Register 1
+#define CTRLR1              (0x4 + SPI_BASE_ADDR)
+//SSI Enable Register
+#define SSIENR              (0x8 + SPI_BASE_ADDR)
+//Microwire Control Registers
+#define MWCR                (0xC + SPI_BASE_ADDR)
+//Slave Enable Register
+#define SER                 (0x10 + SPI_BASE_ADDR)
+//Baud Rate Select
+#define BAUDR               (0x14 + SPI_BASE_ADDR)
+//Transmit FIFO Threshold Level
+#define TXFTLR              (0x18 + SPI_BASE_ADDR)
+//Receive FIFO Threshold Level
+#define RXFTLR              (0x1C + SPI_BASE_ADDR)
+//Transmit FIFO Level Register
+#define TXFLR               (0x20 + SPI_BASE_ADDR)
+//Receive FIFO Level Register
+#define RXFLR               (0x24 + SPI_BASE_ADDR)
+//Status Register
+#define SR                  (0x28 + SPI_BASE_ADDR)
+//Interrupt Mask Register
+#define IMR                 (0x2C + SPI_BASE_ADDR)
+//Interrupt Status Register
+#define ISR                 (0x30 + SPI_BASE_ADDR)
+//Raw Interrupt Status Register
+#define RISR                (0x34 + SPI_BASE_ADDR)
+//Transmit FIFO Overflow Interrupt Clear Register
+#define TXOICR              (0x38 + SPI_BASE_ADDR)
+//Receive FIFO Overflow Interrupt Clear Register
+#define RXOICR              (0x3C + SPI_BASE_ADDR)
+//Receive FIFO Underflow Interrupt Clear Register
+#define RXUICR              (0x40 + SPI_BASE_ADDR)
+//Multi-Master Interrupt Clear Register
+#define MSTICR              (0x44 + SPI_BASE_ADDR)
+//Interrupt Clear Register
+#define ICR                 (0x48 + SPI_BASE_ADDR)
+//DMA Control Register
+#define DMACR               (0x4C + SPI_BASE_ADDR)
+//DMA Transmit Data Level
+#define DMATDLR             (0x50 + SPI_BASE_ADDR)
+//DMA Receive Data Level
+#define DMARDLR             (0x54 + SPI_BASE_ADDR)
+//Identification Register
+#define IDR                 (0x58 + SPI_BASE_ADDR)
+//coreKit Version ID register
+#define SSI_COMP_VERSION    (0x5C + SPI_BASE_ADDR)
+//Data Registers
+#define DR0                 (0x60 + SPI_BASE_ADDR)
+#define DR1                 (0x64 + SPI_BASE_ADDR)
+#define DR2                 (0x68 + SPI_BASE_ADDR)
+#define DR3                 (0x6C + SPI_BASE_ADDR)
+#define DR4                 (0x70 + SPI_BASE_ADDR)
+#define DR5                 (0x74 + SPI_BASE_ADDR)
+#define DR6                 (0x78 + SPI_BASE_ADDR)
+#define DR7                 (0x7C + SPI_BASE_ADDR)
+#define DR8                 (0x80 + SPI_BASE_ADDR)
+#define DR9                 (0x84 + SPI_BASE_ADDR)
+#define DR10                (0x88 + SPI_BASE_ADDR)
+#define DR11                (0x8C + SPI_BASE_ADDR)
+#define DR12                (0x90 + SPI_BASE_ADDR)
+#define DR13                (0x94 + SPI_BASE_ADDR)
+#define DR14                (0x98 + SPI_BASE_ADDR)
+#define DR15                (0x9C + SPI_BASE_ADDR)
+#define DR16                (0xA0 + SPI_BASE_ADDR)
+#define DR17                (0xA4 + SPI_BASE_ADDR)
+#define DR18                (0xA8 + SPI_BASE_ADDR)
+#define DR19                (0xAC + SPI_BASE_ADDR)
+#define DR20                (0xB0 + SPI_BASE_ADDR)
+#define DR21                (0xB4 + SPI_BASE_ADDR)
+#define DR22                (0xB8 + SPI_BASE_ADDR)
+#define DR23                (0xBC + SPI_BASE_ADDR)
+#define DR24                (0xC0 + SPI_BASE_ADDR)
+#define DR25                (0xC4 + SPI_BASE_ADDR)
+#define DR26                (0xC8 + SPI_BASE_ADDR)
+#define DR27                (0xCC + SPI_BASE_ADDR)
+#define DR28                (0xD0 + SPI_BASE_ADDR)
+#define DR29                (0xD4 + SPI_BASE_ADDR)
+#define DR30                (0xD8 + SPI_BASE_ADDR)
+#define DR31                (0xDC + SPI_BASE_ADDR)
+#define DR32                (0xE0 + SPI_BASE_ADDR)
+#define DR33                (0xE4 + SPI_BASE_ADDR)
+#define DR34                (0xE8 + SPI_BASE_ADDR)
+#define DR35                (0xEC + SPI_BASE_ADDR)
+//RX Sample Delay Register
+#define RX_SAMPLE_DLY       (0xF0 + SPI_BASE_ADDR)
