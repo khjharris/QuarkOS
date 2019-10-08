@@ -418,3 +418,61 @@
 //RX Sample Delay Register
 #define RX_SAMPLE_DLY       (0xF0 + SPI_BASE_ADDR)
 
+/******************************** DMA Registers **********************************/
+
+#define DMA_BASE_ADDR       0xB0700000
+
+//Channel 0 Source Address
+#define SAR_0               (0x0 + DMA_BASE_ADDR)
+#define SAR_1               (0x58 + DMA_BASE_ADDR)
+#define SAR_2               (0xB0 + DMA_BASE_ADDR)
+#define SAR_3               (0x108 + DMA_BASE_ADDR)
+#define SAR_4               (0x160 + DMA_BASE_ADDR)
+#define SAR_5               (0x1B8 + DMA_BASE_ADDR)
+#define SAR_6               (0x210 + DMA_BASE_ADDR)
+#define SAR_7               (0x268 + DMA_BASE_ADDR)
+//Channel 0 Destination Address
+#define DAR_0               (0x8 + DMA_BASE_ADDR)
+#define DAR_1               (0x60 + DMA_BASE_ADDR)
+#define DAR_2               (0xB8 + DMA_BASE_ADDR)
+#define DAR_3               (0x110 + DMA_BASE_ADDR)
+#define DAR_4               (0x168 + DMA_BASE_ADDR)
+#define DAR_5               (0x1C0 + DMA_BASE_ADDR)
+#define DAR_6               (0x218 + DMA_BASE_ADDR)
+#define DAR_7               (0x270 + DMA_BASE_ADDR)
+//Channel 0 Linked List Pointer
+#define LLP_0               (0x10 + DMA_BASE_ADDR)
+#define LLP_1               (0x68 + DMA_BASE_ADDR)
+#define LLP_2               (0xC0 + DMA_BASE_ADDR)
+#define LLP_3               (0x118 + DMA_BASE_ADDR)
+#define LLP_4               (0x170 + DMA_BASE_ADDR)
+#define LLP_5               (0x1C8 + DMA_BASE_ADDR)
+#define LLP_6               (0x220 + DMA_BASE_ADDR)
+#define LLP_7               (0x278 + DMA_BASE_ADDR)
+//Channel 0 Control Lower
+#define CTL_L_0             (0x18 + DMA_BASE_ADDR)
+#define CTL_L_1             (0x70 + DMA_BASE_ADDR)
+#define CTL_L_2             (0xC8 + DMA_BASE_ADDR)
+#define CTL_L_3             (0x120 + DMA_BASE_ADDR)
+#define CTL_L_4             (0x178 + DMA_BASE_ADDR)
+#define CTL_L_5             (0x1D0 + DMA_BASE_ADDR)
+#define CTL_L_6             (0x228 + DMA_BASE_ADDR)
+#define CTL_L_7             (0x280 + DMA_BASE_ADDR)
+//Channel 0 Control Upper
+#define CTL_L_0             (0x1C + DMA_BASE_ADDR)
+#define CTL_U_1             (0x74 + DMA_BASE_ADDR)
+#define CTL_U_2             (0xCC + DMA_BASE_ADDR)
+#define CTL_U_3             (0x124 + DMA_BASE_ADDR)
+#define CTL_U_4             (0x17C + DMA_BASE_ADDR)
+#define CTL_U_5             (0x1D4 + DMA_BASE_ADDR)
+#define CTL_U_6             (0x22C + DMA_BASE_ADDR)
+#define CTL_U_7             (0x284 + DMA_BASE_ADDR)
+//Channel 0 Source Status
+#define SSTAT_0
+#define SSTAT_1
+#define SSTAT_2
+#define SSTAT_3
+#define SSTAT_4
+#define SSTAT_5
+#define SSTAT_6
+#define SSTAT_7
