@@ -15,7 +15,6 @@
 #define GPIO_SWPORTA_DDR    (0x4 + GPIO_BASE_ADDR)
 //PORT A Data Source
 #define GPIO_SWPORTA_CTL    (0x8 + GPIO_BASE_ADDR)
-
 //Interuupt enable
 #define GPIO_INTEN          (0x30 + GPIO_BASE_ADDR)
 //Interrupt mask
@@ -38,10 +37,8 @@
 #define GPIO_CONFIG_REG2    (0x70 + GPIO_BASE_ADDR)
 //GPIO Configuration Register 1
 #define GPIO_CONFIG_REG1    (0x74 + GPIO_BASE_ADDR)
-
 //Port A External Port
 #define GPIO_EXT_PORTA      (0x50 + GPIO_BASE_ADDR)
-
 //Synchronization Level
 #define GPIO_LS_SYNC        (0x60 + GPIO_BASE_ADDR)
 
@@ -209,3 +206,94 @@
 #define DOEPTSIZ3           (0xB70 + USB_BASE_ADDR)
 //Power and Clock Gating Control Register
 #define PCGCCTL             (0xE00 + USB_BASE_ADDR)
+
+/******************************** I2C Registers **********************************/
+
+//I2C Base address
+#define I2C_BASE_ADDR       0xB0002800
+//Control Register
+#define IC_CON              0x0
+//Master Target Address
+#define IC_TAR              0x4
+//Slave Address
+#define IC_SAR              0x8
+//High Speed Master ID
+#define IC_HS_MADDR         0xC
+//Data Buffer and Command
+#define IC_DATA_CMD         0x10
+//Standard Speed Clock SCL High Count
+#define IC_SS_SCL_HCNT      0x14
+//Standard Speed Clock SCL Low Count
+#define IC_SS_SCL_LCNT      0x18
+//Fast Speed Clock SCL High Count
+#define IC_FS_SCL_HCNT      0x1C
+//Fast Speed I2C Clock SCL Low Count
+#define IC_FS_SCL_LCNT      0x20
+//High Speed I2C Clock SCL High Count
+#define IC_HS_SCL_HCNT      0x24
+//High Speed I2C Clock SCL Low Count
+#define IC_HS_SCL_LCNT      0x28
+//Interrupt Status
+#define IC_INTR_STAT        0x2C
+//Interrupt Mask
+#define IC_INTR_MASK        0x30
+//Raw Interrupt Status
+#define IC_RAW_INTR_STAT    0x34
+//Receive FIFO Threshold Level
+#define IC_RX_TL            0x38
+//Transmit FIFO Threshold Level
+#define IC_TX_TL
+//Clear Combined and Individual Interrupt
+#define IC_CLR_INTR
+//Clear RX_UNDER Interrupt
+#define IC_CLR_RX_UNDER
+//Clear RX_OVER Interrupt
+#define IC_CLR_RX_OVER
+//Clear TX_OVER Interrupt
+#define IC_CLR_TX_OVER
+//Clear RD_REQ Interrupt
+#define IC_CLR_RD_REQ
+//Clear TX_ABRT Interrupt
+#define IC_CLR_TX_ABRT
+//Clear RX_DONE Interrupt
+#define IC_CLR_RX_DONE
+//Clear ACTIVITY Interrupt
+#define IC_CLR_ACTIVITY
+//Clear STOP_DET Interrupt
+#define IC_CLR_STOP_DET
+//Clear START_DET Interrupt
+#define IC_CLR_START_DET
+//Clear GEN_CALL Interrupt
+#define IC_CLR_GEN_CALL
+//Enable
+#define IC_ENABLE
+//Status
+#define IC_STATUS
+//Transmit FIFO Level
+#define IC_TXFLR
+//Receive FIFO Level
+#define IC_RXFLR
+//SDA Hold
+#define IC_SDA_HOLD
+//Transmit Abort Source
+#define IC_TX_ABRT_SOURCE
+//SDA Setup
+#define IC_DMA_CR
+//DMA Transmit Data Level Register
+#define IC_DMA_TDLR
+//I2C Receive Data Level Register
+#define IC_DMA_RDLR
+//SDA Setup
+#define IC_SDA_SETUP
+//General Call Ack
+#define IC_ACK_GENERAL_CALL
+//Enable Status
+#define IC_ENABLE_STATUS
+//SS and FS Spike Suppression Limit
+#define IC_FS_SPKLEN
+//Configuration Parameters. RSVD (Reserved)
+#define IC_COMP_PARAM_1
+//Component Version. RSVD (Reserved)
+#define IC_COMP_VERSION
+//Component Type. RSVD (Reserved)
+#define IC_COMP_TYPE
