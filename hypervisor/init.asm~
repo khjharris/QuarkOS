@@ -1,7 +1,0 @@
-/**
-	*Runs on start after bootloader
-	*Author: Noah malhi - malhin@bu.edu
-**/
-
-.globl _start
-_star
