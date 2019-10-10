@@ -1,6 +1,8 @@
 /**
 	*Runs on start after bootloader
 	*Author: Noah malhi - malhin@bu.edu
+	*Ring 0 -> Hypervisor & kernel
+	*Ring 1 -> User level
 **/
 section .text
 	
@@ -10,7 +12,6 @@ _main:
 	
 	//may need to setup alignment --> believe they start at 0x00
 	%macro _vec_entr label
-	//$align	8
 	jmp 	\label
 	%endmacro
 	$align
@@ -30,7 +31,7 @@ _vector_table:
 	entry _vec_handler	//Intel reserved; 0x09
 	entry _vec_handler	//Invalid TSS 0x0A
 	entry _vec_handler	//Segment not present; 0x0B
-	entry _vec_handler    //Stack segment fault; 0x0C
+	entry _vec_handler  //Stack segment fault; 0x0C
 	entry _vec_handler	//General protection; 0x0D
 	entry _vec_handler	//Page fault; 0x0E
 	entry _vec_handler	//Intel reserved; 0x0F
@@ -41,15 +42,15 @@ _vector_table:
 
 //dont use %rsp --> includes stack pointer %esp
 _init:
-	//create el2 stack and point to it
-	mov 	$el2_stack_end, %r8
+	//create ring0 stack and point to it
+	mov 	$ring0_stack_end, %r8
 	mov 	%r8, %esp
 	//Clear binaries -> pushing registers onto the stack, clearing the binaries then restoring to a reg
 	push	%r8
 	push 	%r9
-	jmp 	_clear_bss
-	pop	%r9
-	pop	%r8
+	jmp 		_clear_bss
+	pop		%r9
+	pop		%r8
 	
 	//jump to start routine
 	jmp		_start
@@ -84,13 +85,13 @@ _vec_handler:
 
 %macro _reg_state_load
 	//pop general purpose registers to restore
-	pop	%r8
-	pop	%r9
-	pop	%r10
-	pop	%r11
-	pop	%r12
-	pop	%r13
-	pop	%r14
-	pop	%r15
+	pop		%r8
+	pop		%r9
+	pop		%r10
+	pop		%r11
+	pop		%r12
+	pop		%r13
+	pop		%r14
+	pop		%r15
 %endmacro
 	
