@@ -468,11 +468,29 @@
 #define CTL_U_6             (0x22C + DMA_BASE_ADDR)
 #define CTL_U_7             (0x284 + DMA_BASE_ADDR)
 //Channel 0 Source Status
-#define SSTAT_0
-#define SSTAT_1
-#define SSTAT_2
-#define SSTAT_3
-#define SSTAT_4
-#define SSTAT_5
-#define SSTAT_6
-#define SSTAT_7
+#define SSTAT_0             (0x20 + DMA_BASE_ADDR)
+#define SSTAT_1             (0x78 + DMA_BASE_ADDR)
+#define SSTAT_2             (0xD0 + DMA_BASE_ADDR)
+#define SSTAT_3             (0x128 + DMA_BASE_ADDR)
+#define SSTAT_4             (0x180 + DMA_BASE_ADDR)
+#define SSTAT_5             (0x1D8 + DMA_BASE_ADDR)
+#define SSTAT_6             (0x230 + DMA_BASE_ADDR)
+#define SSTAT_7             (0x288 + DMA_BASE_ADDR)
+//Channel 0 Desitination Status
+#define DSTAT_0             (0x28 + DMA_BASE_ADDR)
+#define DSTAT_1             (0x80 + DMA_BASE_ADDR)
+#define DSTAT_2             (0xD8 + DMA_BASE_ADDR)
+#define DSTAT_3             (0x130 + DMA_BASE_ADDR)
+#define DSTAT_4             (0x188 + DMA_BASE_ADDR)
+#define DSTAT_5             (0x1E0 + DMA_BASE_ADDR)
+#define DSTAT_6             (0x238 + DMA_BASE_ADDR)
+#define DSTAT_7             (0x290 + DMA_BASE_ADDR)
+//Channel 0 Source Status Address
+#define SSTATAR_0             (0x28 + DMA_BASE_ADDR)
+#define SSTATAR_1             (0x80 + DMA_BASE_ADDR)
+#define SSTATAR_2             (0xD8 + DMA_BASE_ADDR)
+#define SSTATAR_3             (0x130 + DMA_BASE_ADDR)
+#define SSTATAR_4             (0x188 + DMA_BASE_ADDR)
+#define SSTATAR_5             (0x1E0 + DMA_BASE_ADDR)
+#define SSTATAR_6             (0x238 + DMA_BASE_ADDR)
+#define SSTATAR_7             (0x290 + DMA_BASE_ADDR)
